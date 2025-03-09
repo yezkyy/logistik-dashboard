@@ -21,7 +21,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('items', ItemController::class);
+Route::middleware('auth')->group(function () {
+    Route::resource('items', ItemController::class);
+});
 
 Route::get('/qr-scanner', [LogistikController::class, 'index'])->name('qr-scanner');
 
