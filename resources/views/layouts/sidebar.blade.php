@@ -1,4 +1,4 @@
-<aside class="w-60 bg-white border-r border-gray-100 min-h-screen p-5 hidden md:flex flex-col flex-shrink-0 shadow-sm">
+<aside class="w-60 bg-white border-r border-gray-100 fixed left-0 top-16 min-h-screen p-5 hidden md:flex flex-col flex-shrink-0 shadow-sm">
 
     <!-- Navigasi -->
     <nav class="flex-1">
